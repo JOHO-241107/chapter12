@@ -12,11 +12,13 @@ public class Main {
 
         Monster[] monsters = new Monster[3];
         monsters[0] = new Matango();
+        monsters[0].hp = 50;
 
         monsters[1] = new Goblin();
+        monsters[1].hp = 50;
 
         monsters[2] = new Slime();
-
+        monsters[2].hp = 50;
         for (Character member : c) {
             for (Monster m : monsters) {
                 member.attack(m);
